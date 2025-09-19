@@ -2,6 +2,10 @@ import fs from "fs";
 import path from "path";
 import { marked } from "marked";
 import puppeteer from "puppeteer";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 export async function mdToPdf(input: string, output: string, theme: string) {
   const markdown = fs.readFileSync(input, "utf-8");
