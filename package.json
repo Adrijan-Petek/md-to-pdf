@@ -6,6 +6,8 @@
   },
   "type": "module",
   "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
     "start": "node bin/cli.js README.md --theme light"
   },
   "dependencies": {
