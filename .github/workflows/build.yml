@@ -1,3 +1,10 @@
+name: Build PDF Docs
+
+on:                           # 👈 Add this block
+  push:                       # Run when code is pushed
+    branches: [ "main" ]      # Only on the main branch
+  workflow_dispatch:          # Also allow manual trigger
+
 jobs:
   build-pdf:
     runs-on: ubuntu-latest
@@ -11,7 +18,7 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build   # <-- compile TS -> dist/
+        run: npm run build
 
       - name: Generate PDF
         run: node bin/cli.js README.md --theme dark
