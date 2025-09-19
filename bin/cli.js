@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import { mdToPdf } from "../src/converter.js";
+import { mdToPdf } from "../dist/converter.js";
+
 
 const args = process.argv.slice(2);
 const input = args[0] || "README.md";
