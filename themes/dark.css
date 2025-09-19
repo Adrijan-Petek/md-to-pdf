@@ -1,0 +1,15 @@
+body {
+  font-family: "Fira Code", monospace;
+  color: #eee;
+  background: #121212;
+  line-height: 1.6;
+  padding: 2rem;
+}
+h1, h2, h3 {
+  color: #ff9800;
+}
+code {
+  background: #333;
+  padding: 2px 4px;
+  border-radius: 4px;
+}

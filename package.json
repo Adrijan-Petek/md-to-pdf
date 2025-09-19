@@ -1,0 +1,18 @@
+{
+  "name": "md-to-pdf",
+  "version": "1.0.0",
+  "bin": {
+    "md-to-pdf": "bin/cli.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node bin/cli.js README.md --theme light"
+  },
+  "dependencies": {
+    "marked": "^9.0.0",
+    "puppeteer": "^22.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
